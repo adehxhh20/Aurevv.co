@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="A gift hamper basket filled with a teddy, chocolates, cookies, a card and dried flowers">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EEDF"/><stop offset="1" stop-color="#EAD9BD"/></linearGradient>
+<linearGradient id="bask" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9B27C"/><stop offset="1" stop-color="#C39A60"/></linearGradient>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect y="700" width="800" height="300" fill="#E2CDA9"/>
+<ellipse cx="400" cy="860" rx="300" ry="30" fill="#172B4D" opacity=".12"/>
+<!-- dried flowers -->
+<g stroke="#8A6B3F" stroke-width="5" stroke-linecap="round" fill="none">
+<path d="M300 520C290 420 280 360 270 300"/><path d="M340 520C340 420 350 340 366 270"/><path d="M470 520C480 430 500 360 530 300"/>
+</g>
+<g fill="#F7B5C9"><circle cx="270" cy="296" r="22"/><circle cx="252" cy="318" r="16"/><circle cx="290" cy="320" r="16"/></g>
+<g fill="#FFFFFF"><circle cx="366" cy="266" r="24"/><circle cx="346" cy="292" r="17"/><circle cx="388" cy="294" r="17"/></g>
+<g fill="#FFC93C"><circle cx="270" cy="296" r="8"/><circle cx="366" cy="266" r="9"/></g>
+<g fill="#A9D8F5"><circle cx="530" cy="296" r="22"/><circle cx="512" cy="320" r="16"/><circle cx="552" cy="318" r="16"/></g>
+<!-- card -->
+<g transform="rotate(8 560 470)"><rect x="500" y="380" width="150" height="190" rx="12" fill="#FFFFFF" stroke="#172B4D" stroke-width="5"/><path d="M530 440h90 M530 470h90 M530 500h56" stroke="#A9D8F5" stroke-width="8" stroke-linecap="round"/><path d="M575 540c-10-8-16-14-16-21a9 9 0 0 1 16-5a9 9 0 0 1 16 5c0 7-6 13-16 21z" fill="#F7B5C9"/></g>
+<!-- gift box -->
+<g><rect x="190" y="410" width="150" height="120" rx="12" fill="#A9D8F5" stroke="#172B4D" stroke-width="5"/><rect x="180" y="390" width="170" height="40" rx="12" fill="#CFEAFB" stroke="#172B4D" stroke-width="5"/><rect x="250" y="390" width="30" height="140" fill="#F7B5C9" stroke="#172B4D" stroke-width="4"/></g>
+<!-- teddy -->
+<g stroke="#172B4D" stroke-width="5" stroke-linejoin="round">
+<circle cx="408" cy="410" r="30" fill="#D9A877"/><circle cx="504" cy="410" r="30" fill="#D9A877" opacity="0"/>
+<circle cx="372" cy="376" r="22" fill="#D9A877"/><circle cx="444" cy="376" r="22" fill="#D9A877"/>
+<circle cx="408" cy="430" r="64" fill="#D9A877"/><ellipse cx="408" cy="448" rx="30" ry="22" fill="#F1D3B0"/>
+<circle cx="386" cy="418" r="6" fill="#172B4D" stroke="none"/><circle cx="430" cy="418" r="6" fill="#172B4D" stroke="none"/>
+<ellipse cx="408" cy="438" rx="9" ry="6" fill="#172B4D" stroke="none"/>
+</g>
+<ellipse cx="368" cy="444" rx="11" ry="7" fill="#F7B5C9"/><ellipse cx="448" cy="444" rx="11" ry="7" fill="#F7B5C9"/>
+<!-- cookies and chocolate -->
+<g stroke="#172B4D" stroke-width="5"><circle cx="300" cy="560" r="44" fill="#E6B77A"/><circle cx="470" cy="566" r="40" fill="#E6B77A"/></g>
+<g fill="#5B3A29"><circle cx="286" cy="548" r="6"/><circle cx="312" cy="566" r="6"/><circle cx="296" cy="578" r="5"/><circle cx="458" cy="556" r="6"/><circle cx="480" cy="574" r="6"/></g>
+<rect x="370" y="520" width="80" height="56" rx="8" fill="#6B3E2A" stroke="#172B4D" stroke-width="5"/><path d="M370 548h80 M410 520v56" stroke="#4A2A1C" stroke-width="4"/>
+<!-- basket -->
+<path d="M140 560h520l-40 250c-4 26-26 44-52 44H232c-26 0-48-18-52-44z" fill="url(#bask)" stroke="#172B4D" stroke-width="6" stroke-linejoin="round"/>
+<g stroke="#A97F45" stroke-width="5" stroke-linecap="round" fill="none"><path d="M158 620h484 M166 680h468 M174 740h452 M186 796h428"/><path d="M230 562l-12 290 M310 562l-6 290 M400 562v292 M490 562l6 290 M570 562l12 290"/></g>
+<rect x="124" y="540" width="552" height="44" rx="22" fill="#C39A60" stroke="#172B4D" stroke-width="6"/>
+<!-- ribbon -->
+<g stroke="#172B4D" stroke-width="5" stroke-linejoin="round"><path d="M400 600c-30-44-84-40-84-6s46 30 84 6z" fill="#F7B5C9"/><path d="M400 600c30-44 84-40 84-6s-46 30-84 6z" fill="#F7B5C9"/><circle cx="400" cy="600" r="16" fill="#FFFFFF"/><path d="M388 614l-20 60 M412 614l20 60" fill="none" stroke-linecap="round"/></g>
+</svg>

@@ -4,330 +4,214 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>aurevv | Customised Gift Hampers</title>
-<meta name="description" content="Customised gift hampers by aurevv. Order on Instagram @aurevv.co.">
+<meta name="description" content="Thoughtfully curated, customised gift hampers by aurevv. Order on Instagram @aurevv.co.">
 <meta property="og:title" content="aurevv | Customised Gift Hampers">
-<meta property="og:description" content="Personalised hampers for the people you love. Order on Instagram @aurevv.co.">
+<meta property="og:description" content="Thoughtfully curated hampers for life's little and big moments.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z' fill='%23B8386B'/%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-<style>
-html{scroll-behavior:smooth}
-body{margin:0;font-family:'Inter',sans-serif}
-*{box-sizing:border-box}
-button{font-family:inherit}
-a{color:inherit}
-button:focus-visible,a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
-@keyframes fl{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-14px) rotate(4deg)}}
-@keyframes popin{from{opacity:0;transform:translateY(10px) scale(.88)}to{opacity:1;transform:none}}
-@keyframes tokpop{from{transform:translate(-50%,-50%) rotate(var(--r)) scale(1)}to{transform:translate(-50%,-50%) translateY(-26%) scale(1.22) rotate(0deg)}}
-.fl{animation:fl 7s ease-in-out infinite}
-.pop{animation:popin .3s cubic-bezier(.34,1.56,.64,1) both}
-.tok.sel{animation:tokpop .38s cubic-bezier(.34,1.56,.64,1) both}
-.tok:hover{filter:brightness(1.05)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fl,.pop,.tok.sel{animation:none}}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="app"></div>
-<script>
-(function () {
-var IG = "https://ig.me/m/aurevv.co";
-var ICON = {
-cookie: "M12 3a9 9 0 1 0 9 9a4.5 4.5 0 0 1-4.5-4.5A4.5 4.5 0 0 1 12 3z M8.5 10h.01 M11.5 15h.01 M15.5 13.5h.01 M8 14.5h.01",
-card: "M4 5h16v14H4z M8 10h8 M8 14h5",
-quote: "M5 4h14v16H5z M8.5 9h2.5v3H8.5z M13 9h2.5v3H13z M8.5 12l-1 3 M13 12l-1 3",
-choc: "M5 3h14v18H5z M5 9h14 M5 15h14 M12 3v18",
-key: "M7.5 3a4.5 4.5 0 1 0 0 9a4.5 4.5 0 0 0 0-9z M7.5 6.5h.01 M11 11l9 9 M16 16l2-2 M18.5 18.5l2-2",
-teddy: "M12 8.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11z M6 4.5a2.5 2.5 0 1 0 0 5 M18 4.5a2.5 2.5 0 1 1 0 5 M10 13h.01 M14 13h.01 M11 16h2",
-book: "M3 5h7a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H3z M21 5h-7a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h7z",
-crayon: "M6 21V9l2.5-5L11 9v12z M13 21v-8l2.5-4 2.5 4v8z",
-pencil: "M4 20l1-4L16 5l3 3L8 19z M14 7l3 3 M4 20l4-1",
-scrunchie: "M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16z M12 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6z",
-star: "M12 3l2.6 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.7 19.7l1.1-6.1L3.3 9.4l6.1-.8z",
-car: "M2.5 15v-3l2.5-4h9l4 4h3.5v3z M6.5 14.5a2 2 0 1 0 0 4a2 2 0 0 0 0-4z M16.5 14.5a2 2 0 1 0 0 4a2 2 0 0 0 0-4z",
-blocks: "M3 13h8v8H3z M13 13h8v8h-8z M8 4h8v9H8z",
-puzzle: "M5 5h4.5a2 2 0 1 1 4 0H18v4.5a2 2 0 1 0 0 4V18h-4.5a2 2 0 1 0-4 0H5v-4.5a2 2 0 1 1 0-4z",
-mug: "M4 7h11v9a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z M15 9h2a2.5 2.5 0 0 1 0 5h-2 M7 3v2 M11 3v2",
-frame: "M3 4h18v16H3z M7 8h10v8H7z",
-photos: "M3 6h13v11H3z M8 20h13V10 M5.5 14l3-3 2.5 2.5 2-2 2.5 2.5",
-candle: "M12 2.5c2 2 2 3.5 0 5c-2-1.5-2-3 0-5z M8 11h8v10H8z M12 7.5V11 M6 21h12",
-flower: "M12 13v8 M12 13c-3.5-1-4.5-4.5-3.5-8c3.5 1 4.5 4.5 3.5 8z M12 13c3.5-1 4.5-4.5 3.5-8c-3.5 1-4.5 4.5-3.5 8z M12 13c-4 0-6-2.5-6-5.5c3 0 6 2 6 5.5z M9 21h6",
-collector: "M6 3h12v18H6z M9 7h6v6H9z M9 16.5h6",
-pendant: "M6 2.5l6 6.5 6-6.5 M12 21s-5.5-3.5-5.5-7.5a3 3 0 0 1 5.5-1.7a3 3 0 0 1 5.5 1.7c0 4-5.5 7.5-5.5 7.5z",
-album: "M5 3h14v18H5z M5 3v18 M10 9h6v6h-6z",
-letter: "M3 6h18v12H3z M3 7l9 6.5L21 7"
-};
-var KIND = {
-heart: "M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z",
-star: "M12 2l2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.3 5.8 21.1l1.6-7L2 9.3l7.1-.7z",
-dot: "M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16z"
-};
-function light(c) {
-return {
-bg: "linear-gradient(180deg, " + c.bg1 + " 0%, " + c.bg2 + " 100%)",
-ink: c.ink, muted: c.muted, line: c.ink + "1F", card: "#FFFFFF",
-box: c.box, boxDark: c.boxDark, inner: c.inner, ribbon: "#FFFFFF",
-tokenBg: "#FFFFFF", tokenInk: c.accent,
-selBg: c.accent, selInk: "#FFFFFF", ring: c.accent + "66",
-accent: c.accent, accentInk: "#FFFFFF", rowSel: c.accent + "1A",
-tabBorder: c.ink + "40", tabOnBg: c.accent, tabOnInk: "#FFFFFF",
-bubbleBg: "#FFFFFF", bubbleInk: c.ink, pillBg: "#FFFFFF", pillInk: c.ink,
-deco: c.deco, kind: c.kind
-};
-}
-function love(c) {
-return {
-bg: "linear-gradient(160deg, #4A0A24 0%, #7E1840 55%, #A3234F 100%)",
-ink: "#FFF1F5", muted: "#F7CDD9", line: "rgba(255,255,255,0.2)", card: "rgba(255,255,255,0.12)",
-box: c.box, boxDark: c.boxDark, inner: c.inner, ribbon: c.ribbon,
-tokenBg: "#FFF1F5", tokenInk: "#A21D48",
-selBg: "#FFE3EA", selInk: "#6B0F2C", ring: "rgba(255,227,234,0.75)",
-accent: "#FFE3EA", accentInk: "#6B0F2C", rowSel: "rgba(255,255,255,0.16)",
-tabBorder: "rgba(255,241,245,0.45)", tabOnBg: "#FFE3EA", tabOnInk: "#6B0F2C",
-bubbleBg: "#FFF1F5", bubbleInk: "#4A0A24", pillBg: "rgba(255,255,255,0.14)", pillInk: "#FFF1F5",
-deco: "rgba(255,143,176,0.28)", kind: "heart"
-};
-}
-var THEMES = {
-everyday: light({ bg1: "#E4F1FC", bg2: "#F8FBFF", ink: "#16314B", muted: "#4A6682", box: "#9FCBEF", boxDark: "#7DB5E3", inner: "#5F9ED3", accent: "#1F6FB2", deco: "#CBE3F7", kind: "dot" }),
-princess: light({ bg1: "#FFE8F1", bg2: "#FFF8FB", ink: "#4B1D36", muted: "#7A4560", box: "#F8C1D8", boxDark: "#F2A2C3", inner: "#E985B0", accent: "#B8386B", deco: "#FBCFE1", kind: "heart" }),
-prince: light({ bg1: "#E3EAFF", bg2: "#F6F8FF", ink: "#0F1E4D", muted: "#43507C", box: "#1E3A8A", boxDark: "#162C6B", inner: "#0F1F55", accent: "#1E3A8A", deco: "#C6D3FF", kind: "star" }),
-parents: light({ bg1: "#FAEFD7", bg2: "#FFFBF2", ink: "#3A2B0F", muted: "#6B5628", box: "#E7CF98", boxDark: "#D4B672", inner: "#B9974C", accent: "#8A6414", deco: "#F0DDB0", kind: "dot" }),
-boyfriend: love({ box: "#D92D55", boxDark: "#B11F43", inner: "#6E0E2B", ribbon: "#FFD9E2" }),
-girlfriend: love({ box: "#F7A8BF", boxDark: "#EF86A5", inner: "#C4466D", ribbon: "#FFFFFF" })
-};
-var HAMPERS = [
-{ id: "everyday", tab: "Everyday", eyebrow: "Hamper A", title: "The Everyday Hamper", tagline: "A little something for anyone, any day.", price: "₹599", note: "", items: [
-{ name: "Cookies or biscuits", icon: "cookie" },
-{ name: "Personalised message card", icon: "card" },
-{ name: "Quote card", icon: "quote" },
-{ name: "Chocolate treat", icon: "choc" },
-{ name: "Decorative keychain", icon: "key" } ] },
-{ id: "princess", tab: "Lil Princess", eyebrow: "Hamper B", title: "For Your Lil Princess", tagline: "A box of sweet surprises for your little princess.", price: "₹699", note: "", items: [
-{ name: "Mini plush teddy", icon: "teddy" },
-{ name: "Cute colouring book", icon: "book" },
-{ name: "Crayon or colour pencil set", icon: "crayon" },
-{ name: "Cute stationery set", icon: "pencil" },
-{ name: "Hair clips or scrunchies", icon: "scrunchie" },
-{ name: "Stickers collection", icon: "star" },
-{ name: "Chocolates!", icon: "choc" },
-{ name: "Personalised greeting card", icon: "card" } ] },
-{ id: "prince", tab: "Lil Prince", eyebrow: "Hamper B", title: "For Your Lil Prince", tagline: "A box of fun surprises for your little prince.", price: "₹699", note: "", items: [
-{ name: "Mini toy car", icon: "car" },
-{ name: "Mini building blocks set", icon: "blocks" },
-{ name: "Kids' colouring/activity book", icon: "book" },
-{ name: "Crayon or colour pencil set", icon: "crayon" },
-{ name: "Mini puzzle", icon: "puzzle" },
-{ name: "Fun stickers", icon: "star" },
-{ name: "Chocolates!", icon: "choc" },
-{ name: "Personalised greeting card", icon: "card" } ] },
-{ id: "parents", tab: "Parents' Anniversary", eyebrow: "Hamper C", title: "For Your Parents' Anniversary", tagline: "A keepsake box to celebrate their years together.", price: "₹1599", note: "Price may vary with add-ons", items: [
-{ name: "Matching couple mugs", icon: "mug" },
-{ name: "Personalised photo frame", icon: "frame" },
-{ name: "Personalised anniversary message", icon: "card" },
-{ name: "Small pictures of unforgettable memories", sub: "3 pictures", icon: "photos" },
-{ name: "Scented candle", icon: "candle" },
-{ name: "Chocolate assortment", icon: "choc" },
-{ name: "Mini dried flower bouquet", icon: "flower" } ] },
-{ id: "boyfriend", tab: "Boyfriend", eyebrow: "Hamper D", title: "For Your Boyfriend", tagline: "Little things, big feelings, with a letter from you.", price: "₹1299", note: "Price may vary with add-ons", items: [
-{ name: "Three Hot Wheels cars", sub: "Two regular + one Mainline or Premium", icon: "car" },
-{ name: "Chocolates!", icon: "choc" },
-{ name: "Keychain", sub: "Of his girlfriend's choice", icon: "key" },
-{ name: "A personalised letter from his girl", icon: "letter" },
-{ name: "Collector's card", sub: "From us", icon: "collector" } ] },
-{ id: "girlfriend", tab: "Girlfriend", eyebrow: "Hamper E", title: "For Your Girlfriend", tagline: "A box of keepsakes and a love letter, just for her.", price: "₹1299", note: "Price may vary with add-ons", items: [
-{ name: "Minimal heart pendant", icon: "pendant" },
-{ name: "Mini memory album", icon: "album" },
-{ name: "Mini plush teddy", icon: "teddy" },
-{ name: "Chocolates!", icon: "choc" },
-{ name: "Personalised love letter", icon: "letter" } ] }
-];
-var LAYOUT = {
-5: { w: 19, pos: [[24, 26], [50, 23], [76, 26], [37, 50], [63, 48]] },
-7: { w: 18, pos: [[17, 26], [39, 23], [61, 23], [83, 26], [28, 51], [50, 49], [72, 51]] },
-8: { w: 18, pos: [[17, 26], [39, 23], [61, 23], [83, 26], [17, 51], [39, 49], [61, 49], [83, 51]] }
-};
-var DECO = [[6, 5, 38], [88, 4, 28], [10, 30, 22], [91, 28, 44], [4, 58, 30], [89, 55, 26], [9, 82, 40], [86, 80, 32], [48, 2, 20]];
-var ROTS = [-6, 4, -3, 6, -5, 3, -4, 5];
 
-var state = { hid: "everyday", sel: -1 };
-var app = document.getElementById("app");
+<canvas id="morph" aria-hidden="true"></canvas>
 
-function esc(s) {
-return String(s).replace(/[&<>"']/g, function (c) {
-return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-});
-}
+<header class="site-header">
+<div class="wrap nav">
+<a class="logo" href="#top" aria-label="aurevv, back to top">aurevv</a>
+<nav class="nav-links" aria-label="Main">
+<a href="#hampers">Hampers</a>
+<a href="#custom">Custom</a>
+<a href="#cart">My Cart <span class="badge" id="cartBadge" hidden>0</span></a>
+<a href="#orders">My Orders <span class="badge" id="ordersBadge" hidden>0</span></a>
+<a href="#contact">Contact</a>
+<a class="nav-cta" href="https://ig.me/m/aurevv.co" target="_blank" rel="noopener">Order now</a>
+</nav>
+</div>
+</header>
 
-function view() {
-var cur = HAMPERS.filter(function (h) { return h.id === state.hid; })[0] || HAMPERS[0];
-var t = THEMES[cur.id];
-var sel = state.sel;
-var slots = LAYOUT[cur.items.length];
-var labelPath = t.kind === "dot" ? KIND.heart : KIND[t.kind];
+<main>
 
-var deco = DECO.map(function (d, i) {
-return '<svg class="fl" viewBox="0 0 24 24" aria-hidden="true" style="position:absolute;left:' + d[0] + '%;top:' + d[1] + '%;width:' + d[2] + 'px;height:' + d[2] + 'px;animation-delay:' + (i * 0.7) + 's"><path d="' + KIND[t.kind] + '" fill="' + t.deco + '"></path></svg>';
-}).join("");
+<section id="top" class="hero" data-tone="#F8F4ED">
+<div class="wrap hero-inner">
+<div class="hero-copy">
+<p class="hero-brand" aria-hidden="true">aurevv</p>
+<h1>Make Someone's Day, Unforgettable.</h1>
+<p class="hero-sub">Thoughtfully curated hampers for life's little and big moments.</p>
+<div class="hero-ctas">
+<a class="btn btn-navy" href="#hampers">Explore Hampers</a>
+<a class="btn btn-outline" href="#custom">Create Your Own</a>
+</div>
+</div>
 
-var tabs = HAMPERS.map(function (h) {
-var on = h.id === cur.id;
-return '<button data-k="tab-' + h.id + '" data-hid="' + h.id + '" aria-pressed="' + on + '" style="min-height:46px;padding:0 22px;border-radius:999px;cursor:pointer;font-size:15px;font-weight:' + (on ? 600 : 500) + ';background:' + (on ? t.tabOnBg : "transparent") + ';color:' + (on ? t.tabOnInk : t.ink) + ';border:1.5px solid ' + (on ? t.tabOnBg : t.tabBorder) + '">' + esc(h.tab) + '</button>';
-}).join("");
+<div class="hero-visual">
+<!-- To use your own photo: save it as hero-hamper.jpg and change the src below to that file name. -->
+<figure class="hero-photo">
+<img id="heroPhoto" src="hero-hamper.svg" width="800" height="1000" alt="A thoughtfully curated aurevv gift hamper">
+</figure>
 
-var tokens = cur.items.map(function (it, i) {
-var on = sel === i;
-var p = slots.pos[i];
-var rot = ROTS[i % 8];
-var tf = on ? "translate(-50%, -50%) translateY(-26%) scale(1.22) rotate(0deg)" : "translate(-50%, -50%) rotate(" + rot + "deg)";
-var just = p[0] < 30 ? "flex-start" : (p[0] > 70 ? "flex-end" : "center");
-var sh = on ? "0 0 0 5px " + t.ring + ", 0 22px 36px rgba(0,0,0,0.28)" : "0 10px 20px rgba(0,0,0,0.16)";
-var bubble = "";
-if (on) {
-bubble = '<span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:calc(100% + 12px);display:flex;justify-content:' + just + ';pointer-events:none">' +
-'<span class="pop" style="display:block;width:max-content;max-width:200px;padding:10px 14px;border-radius:14px;background:' + t.bubbleBg + ';color:' + t.bubbleInk + ';box-shadow:0 10px 24px rgba(0,0,0,0.22);text-align:left;font-size:13px;line-height:1.35;font-weight:700">' +
-'<span style="display:block">' + esc(it.name) + '</span>' +
-(it.sub ? '<span style="display:block;font-weight:500;opacity:0.8">' + esc(it.sub) + '</span>' : "") +
-'</span></span>';
-}
-return '<button class="tok' + (on ? " sel" : "") + '" data-k="item-' + i + '" data-i="' + i + '" aria-pressed="' + on + '" aria-label="' + esc(it.name) + '" style="--r:' + rot + 'deg;position:absolute;aspect-ratio:1/1;border:0;padding:0;border-radius:30%;cursor:pointer;display:flex;align-items:center;justify-content:center;left:' + p[0] + '%;top:' + p[1] + '%;width:' + slots.w + '%;transform:' + tf + ';z-index:' + (on ? 6 : 2) + ';background:' + (on ? t.selBg : t.tokenBg) + ';color:' + (on ? t.selInk : t.tokenInk) + ';box-shadow:' + sh + '">' +
-'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:46%;height:auto"><path d="' + ICON[it.icon] + '"></path></svg>' +
-'<span aria-hidden="true" style="position:absolute;top:-6px;left:-6px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:' + (on ? t.tokenBg : t.accent) + ';color:' + (on ? t.tokenInk : t.accentInk) + ';box-shadow:0 2px 6px rgba(0,0,0,0.2)">' + (i + 1) + '</span>' +
-bubble + '</button>';
-}).join("");
+<div class="elephant-stage" id="elephantStage">
+<div class="bee" id="bee" hidden aria-hidden="true">
+<div class="bee-x"><div class="bee-y"><div class="bee-face">
+<svg viewBox="0 0 64 56" width="46" height="40" focusable="false">
+<g class="wing wing-b"><ellipse cx="26" cy="12" rx="11" ry="8" fill="#DFF3FF" stroke="#172B4D" stroke-width="2.2" transform="rotate(-24 26 12)"></ellipse></g>
+<g class="wing wing-f"><ellipse cx="36" cy="11" rx="11" ry="8" fill="#EAF8FF" stroke="#172B4D" stroke-width="2.2" transform="rotate(-8 36 11)"></ellipse></g>
+<ellipse cx="32" cy="32" rx="19" ry="14" fill="#FFC93C" stroke="#172B4D" stroke-width="2.6"></ellipse>
+<path d="M26 19.500c-2.200 8-2.200 17 0 25" fill="none" stroke="#172B4D" stroke-width="4.500" stroke-linecap="round"></path>
+<path d="M36 19c-2.200 8-2.200 17.500 0 26" fill="none" stroke="#172B4D" stroke-width="4.500" stroke-linecap="round"></path>
+<path d="M13.500 32l-6 2.500" stroke="#172B4D" stroke-width="2.600" stroke-linecap="round"></path>
+<circle cx="47" cy="29" r="1.900" fill="#172B4D"></circle>
+<circle cx="48" cy="38" r="2.800" fill="#F7B5C9" opacity=".9"></circle>
+<path d="M43 21c2-4 5-5 7-4.500 M47 22c3-3 6-3 8-2" fill="none" stroke="#172B4D" stroke-width="1.800" stroke-linecap="round"></path>
+</svg>
+</div></div></div>
+</div>
 
-var rows = cur.items.map(function (it, i) {
-var on = sel === i;
-return '<button data-k="row-' + i + '" data-i="' + i + '" aria-pressed="' + on + '" style="display:flex;align-items:center;gap:14px;width:100%;min-height:52px;padding:8px 14px;text-align:left;border:0;border-radius:16px;cursor:pointer;background:' + (on ? t.rowSel : "transparent") + ';color:' + t.ink + '">' +
-'<span aria-hidden="true" style="flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:' + (on ? t.accent : t.line) + ';color:' + (on ? t.accentInk : t.ink) + '">' + (i + 1) + '</span>' +
-'<span style="display:flex;flex-direction:column;min-width:0"><span style="font-size:16px;font-weight:' + (on ? 700 : 500) + '">' + esc(it.name) + '</span>' +
-(it.sub ? '<span style="font-size:13px;color:' + t.muted + '">' + esc(it.sub) + '</span>' : "") + '</span></button>';
-}).join("");
+<svg class="elephant" id="elephant" viewBox="0 0 400 420" role="img" aria-label="The aurevv baby elephant" focusable="false">
+<g stroke="#172B4D" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<!-- back legs / body -->
+<ellipse cx="200" cy="318" rx="108" ry="82" fill="#A9D8F5"></ellipse>
+<ellipse cx="200" cy="335" rx="60" ry="52" fill="#CFEAFB" stroke="none"></ellipse>
+<!-- feet -->
+<rect x="112" y="368" width="62" height="40" rx="20" fill="#A9D8F5"></rect>
+<rect x="226" y="368" width="62" height="40" rx="20" fill="#A9D8F5"></rect>
+<path d="M126 396h8 M143 396h8 M240 396h8 M257 396h8" stroke="#4FD1E8" stroke-width="7"></path>
+<!-- ears -->
+<circle cx="84" cy="168" r="66" fill="#A9D8F5"></circle>
+<circle cx="84" cy="168" r="42" fill="#CFEAFB" stroke="#7CC4F0" stroke-width="4"></circle>
+<circle cx="316" cy="168" r="66" fill="#A9D8F5"></circle>
+<circle cx="316" cy="168" r="42" fill="#CFEAFB" stroke="#7CC4F0" stroke-width="4"></circle>
+<!-- head -->
+<ellipse cx="200" cy="172" rx="112" ry="104" fill="#A9D8F5"></ellipse>
+<path d="M120 112c18-20 44-30 80-30s62 10 80 30" fill="none" stroke="#7CC4F0" stroke-width="4"></path>
+<!-- forehead tuft -->
+<path d="M188 76c-4-12 0-20 6-24 M200 74c0-12 4-20 12-22 M212 77c4-9 10-14 17-14" fill="none" stroke-width="5"></path>
+<!-- trunk -->
+<path d="M168 170c-4 52 2 92-8 118c-6 16 22 22 30 6c6-18-2-50 4-80" fill="none" stroke="none"></path>
+<path d="M170 168h60c4 46 4 84 0 112c-3 22-14 34-30 34s-27-12-30-34c-4-28-4-66 0-112z" fill="#A9D8F5"></path>
+<path d="M176 218h48 M174 244h52 M176 270h48" stroke="#7CC4F0" stroke-width="4" fill="none"></path>
+<path d="M186 306c8 7 20 7 28 0" fill="none" stroke="#172B4D" stroke-width="4"></path>
+<!-- eyes -->
+<ellipse cx="156" cy="150" rx="11" ry="14" fill="#172B4D" stroke="none"></ellipse>
+<ellipse cx="244" cy="150" rx="11" ry="14" fill="#172B4D" stroke="none"></ellipse>
+<circle cx="160" cy="144" r="4.200" fill="#FFFFFF" stroke="none"></circle>
+<circle cx="248" cy="144" r="4.200" fill="#FFFFFF" stroke="none"></circle>
+<path d="M138 124c8-8 22-9 32-4 M262 124c-8-8-22-9-32-4" fill="none" stroke-width="4"></path>
+</g>
+<!-- cheeks: pink fades in and out, the two diagonal lines stay -->
+<g class="cheeks">
+<ellipse class="cheek" cx="128" cy="196" rx="24" ry="16" fill="#F7B5C9"></ellipse>
+<ellipse class="cheek" cx="272" cy="196" rx="24" ry="16" fill="#F7B5C9"></ellipse>
+</g>
+<g stroke="#172B4D" stroke-width="3.600" stroke-linecap="round" fill="none">
+<path d="M117 187l7 18 M129 187l7 18"></path>
+<path d="M261 187l7 18 M273 187l7 18"></path>
+</g>
+</svg>
+</div>
+</div>
+</section>
 
-var hint = sel >= 0 ? "Tap it again to tuck it back in" : "Tap any item to see it pop out of the box";
+<section id="hampers" class="hampers" data-tone="#E4F1FC">
+<div class="deco" id="hamperDeco" aria-hidden="true"></div>
+<div class="wrap hampers-inner" id="hamperRoot"></div>
+</section>
 
-var igIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg>';
-var mailIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6.5L21 7"></path></svg>';
+<section id="custom" class="custom" data-tone="#172B4D">
+<div class="wrap custom-inner">
+<div class="custom-copy">
+<p class="eyebrow">Create your own</p>
+<h2>Want something different?</h2>
+<p>Tell us who it's for and what they love. We'll put together a hamper made just for them and reply with a price on Instagram.</p>
+</div>
+<form class="custom-form" id="customForm" novalidate>
+<div class="field">
+<label for="cfWho">Who is it for?</label>
+<select id="cfWho">
+<option>Girlfriend</option>
+<option>Boyfriend</option>
+<option>Parents</option>
+<option>A child</option>
+<option>A friend</option>
+<option>Someone else</option>
+</select>
+</div>
+<div class="field">
+<label for="cfBudget">Budget in ₹ (optional)</label>
+<input id="cfBudget" type="text" inputmode="numeric" placeholder="For example 1500">
+</div>
+<fieldset class="field">
+<legend>What would you like in it?</legend>
+<div class="checks">
+<label><input type="checkbox" value="Chocolates"><span>Chocolates</span></label>
+<label><input type="checkbox" value="Cookies or biscuits"><span>Cookies or biscuits</span></label>
+<label><input type="checkbox" value="Plush teddy"><span>Plush teddy</span></label>
+<label><input type="checkbox" value="Mugs"><span>Mugs</span></label>
+<label><input type="checkbox" value="Scented candle"><span>Scented candle</span></label>
+<label><input type="checkbox" value="Photo frame"><span>Photo frame</span></label>
+<label><input type="checkbox" value="Keychain"><span>Keychain</span></label>
+<label><input type="checkbox" value="Personalised letter or card"><span>Letter or card</span></label>
+<label><input type="checkbox" value="Dried flowers"><span>Dried flowers</span></label>
+<label><input type="checkbox" value="Toys or puzzles"><span>Toys or puzzles</span></label>
+<label><input type="checkbox" value="Jewellery"><span>Jewellery</span></label>
+<label><input type="checkbox" value="Stationery"><span>Stationery</span></label>
+</div>
+</fieldset>
+<div class="field">
+<label for="cfNotes">Occasion and details</label>
+<textarea id="cfNotes" rows="3" placeholder="Names, occasion, favourite colours, anything we should know"></textarea>
+</div>
+<button class="btn btn-ivory" type="submit">Send request on Instagram</button>
+<p class="fineprint">This copies your request and opens a chat with @aurevv.co. Paste it there and send.</p>
+</form>
+</div>
+</section>
 
-return '' +
-'<div style="position:relative;overflow:hidden;min-height:100vh;background:' + t.bg + ';color:' + t.ink + ';font-family:\'Inter\',sans-serif">' +
-'<div style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0">' + deco + '</div>' +
-'<div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:48px;padding:28px clamp(16px, 4vw, 48px) 64px">' +
+<section id="cart" class="cart" data-tone="#F1EADB">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">My Cart</p>
+<h2>Your cart</h2>
+<p class="sec-sub">Hampers you've picked but not ordered yet. Nothing is sent until you place the order.</p>
+</div>
+<div id="cartRoot"></div>
+</div>
+</section>
 
-'<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;width:100%;max-width:1180px;margin:0 auto">' +
-'<a href="#top" data-top="1" aria-label="aurevv" style="display:flex;align-items:center;text-decoration:none;min-height:44px;color:' + t.accent + ';font-family:\'Mrs Saint Delafield\', cursive;font-size:54px;line-height:1">aurevv</a>' +
-'<div style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;font-size:15px;font-weight:500">' +
-'<a href="#hampers" style="text-decoration:none;min-height:44px;display:flex;align-items:center">Hampers</a>' +
-'<a href="#custom" style="text-decoration:none;min-height:44px;display:flex;align-items:center">Custom</a>' +
-'<a href="#order" style="text-decoration:none;min-height:44px;display:flex;align-items:center">Contact</a>' +
-'<a href="' + IG + '" target="_blank" rel="noopener" style="text-decoration:none;min-height:44px;display:flex;align-items:center;padding:0 22px;border-radius:999px;background:' + t.accent + ';color:' + t.accentInk + ';font-weight:600">Order now</a>' +
-'</div></div>' +
+<section id="orders" class="orders" data-tone="#F8F4ED">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">My Orders</p>
+<h2>Your orders</h2>
+<p class="sec-sub">Orders you've placed. Payment, preparation and delivery updates appear here once aurevv confirms them.</p>
+</div>
+<div id="ordersRoot"></div>
+</div>
+</section>
 
-'<div id="top" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;max-width:760px;margin:0 auto">' +
-'<div style="display:flex;align-items:center;gap:8px;padding:8px 18px;border-radius:999px;background:' + t.pillBg + ';color:' + t.pillInk + ';font-size:14px;font-weight:600">' +
-'<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="' + labelPath + '" fill="currentColor"></path></svg><span>Customised gift hampers</span></div>' +
-'<h1 style="margin:0;font-weight:800;font-size:clamp(38px, 6vw, 72px);line-height:1.04;letter-spacing:-0.035em">Gifts, wrapped in feeling.</h1>' +
-'<p style="margin:0;max-width:520px;font-size:19px;line-height:1.55;color:' + t.muted + '">Personalised hampers for the people you love. Choose one below, then tap what\'s inside.</p>' +
-'</div>' +
+<section id="contact" class="contact" data-tone="#0F1F3A">
+<div class="wrap contact-inner">
+<h2>Ready to send a little love?</h2>
+<p>DM us on Instagram to place your order, and mention the hamper you'd like.</p>
+<a class="btn btn-ivory" href="https://ig.me/m/aurevv.co" target="_blank" rel="noopener">Message @aurevv.co</a>
+<div class="contact-links">
+<a href="https://www.instagram.com/aurevv.co/" target="_blank" rel="noopener">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg>
+<span>@aurevv.co</span></a>
+<a href="mailto:aurevv.co@gmail.com">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6.500L21 7"></path></svg>
+<span>aurevv.co@gmail.com</span></a>
+</div>
+<p class="copy">© aurevv</p>
+</div>
+</section>
 
-'<div id="hampers" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:1000px;margin:0 auto">' + tabs + '</div>' +
+</main>
 
-'<div style="display:flex;flex-wrap:wrap;align-items:center;gap:40px 64px;width:100%;max-width:1180px;margin:0 auto">' +
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-'<div style="flex:1 1 440px;min-width:0;padding-top:28px;display:flex;flex-direction:column;align-items:center;gap:18px">' +
-'<div style="position:relative;width:100%;max-width:600px;aspect-ratio:600 / 612">' +
-'<svg viewBox="0 0 600 612" aria-hidden="true" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0">' +
-'<ellipse cx="300" cy="600" rx="250" ry="12" fill="rgba(0,0,0,0.12)"></ellipse>' +
-'<rect x="50" y="44" width="500" height="330" rx="30" fill="' + t.boxDark + '"></rect>' +
-'<rect x="70" y="70" width="460" height="300" rx="24" fill="' + t.inner + '"></rect></svg>' +
-tokens +
-'<svg viewBox="0 0 600 612" aria-hidden="true" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:4;pointer-events:none">' +
-'<rect x="36" y="360" width="528" height="236" rx="30" fill="' + t.box + '"></rect>' +
-'<rect x="36" y="360" width="528" height="236" rx="30" fill="rgba(0,0,0,0.05)"></rect>' +
-'<rect x="26" y="340" width="548" height="44" rx="22" fill="' + t.box + '"></rect>' +
-'<rect x="38" y="344" width="524" height="8" rx="4" fill="rgba(255,255,255,0.35)"></rect>' +
-'<rect x="36" y="384" width="528" height="12" fill="rgba(0,0,0,0.08)"></rect>' +
-'<rect x="272" y="340" width="56" height="256" fill="' + t.ribbon + '"></rect>' +
-'<circle cx="300" cy="478" r="38" fill="' + t.ribbon + '"></circle>' +
-'<circle cx="300" cy="478" r="38" fill="none" stroke="' + t.box + '" stroke-width="3" stroke-dasharray="3 6" stroke-linecap="round"></circle>' +
-'<g transform="translate(282 460) scale(1.5)"><path d="' + labelPath + '" fill="' + t.boxDark + '"></path></g></svg>' +
-'</div>' +
-'<div style="font-size:14px;font-weight:500;color:' + t.muted + ';text-align:center">' + hint + '</div>' +
-'</div>' +
-
-'<div style="flex:1 1 380px;min-width:0;max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:18px">' +
-'<div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:' + t.muted + '">' + esc(cur.eyebrow) + '</div>' +
-'<h2 style="margin:0;font-weight:800;font-size:clamp(30px, 4vw, 46px);line-height:1.08;letter-spacing:-0.03em">' + esc(cur.title) + '</h2>' +
-'<p style="margin:0;font-size:17px;line-height:1.55;color:' + t.muted + '">' + esc(cur.tagline) + '</p>' +
-'<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px">' +
-'<span style="padding:6px 22px;border-radius:999px;background:' + t.accent + ';color:' + t.accentInk + ';font-weight:800;font-size:32px;letter-spacing:-0.02em;line-height:1.3">' + esc(cur.price) + '</span>' +
-(cur.note ? '<span style="font-size:14px;font-weight:500;color:' + t.muted + '">' + esc(cur.note) + '</span>' : "") +
-'</div>' +
-'<div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-top:8px;border-top:1px solid ' + t.line + '">' +
-'<span style="font-size:17px;font-weight:700">What\'s in the box</span><span style="font-size:14px;color:' + t.muted + '">' + cur.items.length + ' items</span></div>' +
-'<div style="display:flex;flex-direction:column;gap:4px">' + rows + '</div>' +
-'<div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding-top:8px">' +
-'<a href="' + IG + '" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:' + t.accent + ';color:' + t.accentInk + ';font-size:16px;font-weight:700;text-decoration:none">Order this hamper</a>' +
-'<span style="font-size:14px;color:' + t.muted + '">DM us the hamper name and who it\'s for.</span></div>' +
-'</div>' +
-
-'</div>' +
-
-'<div id="custom" style="width:100%;max-width:1180px;margin:0 auto;padding:36px 32px;border-radius:32px;background:' + t.accent + ';color:' + t.accentInk + ';display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px">' +
-'<div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:8px">' +
-'<h3 style="margin:0;font-weight:800;font-size:clamp(24px, 3vw, 32px);letter-spacing:-0.02em">Want something different?</h3>' +
-'<p style="margin:0;font-size:16px;line-height:1.55;opacity:0.92">Tell us who it\'s for and what they love, and we\'ll put together a custom hamper.</p></div>' +
-'<a href="' + IG + '" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 30px;border-radius:999px;background:' + t.accentInk + ';color:' + t.accent + ';font-size:16px;font-weight:700;text-decoration:none">Create a custom hamper</a>' +
-'</div>' +
-
-'<div id="order" style="width:100%;max-width:1180px;margin:0 auto;padding:44px 28px;border-radius:32px;background:' + t.card + ';border:1px solid ' + t.line + ';display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">' +
-'<h3 style="margin:0;font-weight:800;font-size:28px;letter-spacing:-0.02em">Ready to send a little love?</h3>' +
-'<p style="margin:0;max-width:480px;font-size:16px;line-height:1.55;color:' + t.muted + '">DM us on Instagram to place your order, and mention the hamper you\'d like.</p>' +
-'<a href="' + IG + '" target="_blank" rel="noopener" style="display:flex;align-items:center;min-height:52px;padding:0 30px;margin-top:6px;border-radius:999px;background:' + t.accent + ';color:' + t.accentInk + ';font-size:16px;font-weight:700;text-decoration:none">Message @aurevv.co</a>' +
-'<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px 28px;padding-top:8px;font-size:15px;font-weight:600">' +
-'<a href="https://www.instagram.com/aurevv.co/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;min-height:44px;text-decoration:none">' + igIcon + '<span>@aurevv.co</span></a>' +
-'<a href="mailto:aurevv.co@gmail.com" style="display:flex;align-items:center;gap:8px;min-height:44px;text-decoration:none">' + mailIcon + '<span>aurevv.co@gmail.com</span></a></div>' +
-'<span style="font-size:13px;color:' + t.muted + '">© aurevv</span>' +
-'</div>' +
-
-'</div></div>';
-}
-
-function render(restoreKey) {
-app.innerHTML = view();
-if (restoreKey) {
-var el = app.querySelector('[data-k="' + restoreKey + '"]');
-if (el) el.focus({ preventScroll: true });
-}
-}
-
-app.addEventListener("click", function (e) {
-var fromKeyboard = e.detail === 0;
-var top = e.target.closest("[data-top]");
-if (top) {
-e.preventDefault();
-var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
-return;
-}
-var tab = e.target.closest("[data-hid]");
-if (tab) {
-state = { hid: tab.getAttribute("data-hid"), sel: -1 };
-render(fromKeyboard ? tab.getAttribute("data-k") : null);
-return;
-}
-var item = e.target.closest("[data-i]");
-if (item) {
-var i = parseInt(item.getAttribute("data-i"), 10);
-state.sel = state.sel === i ? -1 : i;
-render(fromKeyboard ? item.getAttribute("data-k") : null);
-}
-});
-
-render();
-})();
-</script>
+<script src="app.js" defer></script>
 </body>
 </html>
